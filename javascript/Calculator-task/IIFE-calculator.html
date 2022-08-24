@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    
+        <div class="container  py-5">
+            <div class="row d-flex justify-content-center align-items-center ">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5
+                 bg-primary text-white p-3 text-center" 
+                 style="border-radius: 1rem; ">
+       <h2 class="fw-bold mb-2 mt-2 text-uppercase">Calculator</h2>
+                
+       <form action="#" onSubmit="event.preventDefault(); calculate();">
+       <div class="form-inline d-flex justify-content-center align-items-center">
+       <div class="form-group my-2 ">
+        <label class="h4">Value-1</label>
+        <input style="margin-left:25px" type="number" class="form-control" id="val1"  name="val1">
+      </div>
+      <div class="form-group my-2 ">
+        <label class="h4">Value-2</label>
+        <input  style="margin-left:25px" type="number" class="form-control" id="val2"  name="val2">
+      </div>
+     <div class="form-group text-center my-2">
+        <label for="choose" class="h4">Operators : </label>
+        <select id="choose" class="form-control" style="margin-left:10px">
+          <option style="display: none;">choose</option>
+          <option>+</option>
+          <option>-</option>
+          <option>*</option>
+          <option>/</option>
+      </select>
+      </div>
+       <div class="form-group my-2 ">
+       <label class="h4">Result<label> 
+     <input  style="margin-left:40px" type="number" class="form-control" readonly 
+      id="result"  name="result"> 
+      </div> 
+      <div class="form-group my-2 ">
+      <button class="btn btn-outline-light btn-lg px-5 mb-4 form-control" 
+      type="submit">Calculate</button>
+      <button style="margin-left:40px"  class="btn btn-outline-light btn-lg px-5 mb-4 form-control" 
+      type="reset" id="reset" value="Reset" name="reset">Reset</button>
+     </div>
+       </div>
+       </form>
+  </div>
+</div> 
+ </div> 
+<script>
+    function calculate() 
+    {
+        event.preventDefault();
+        event.stopPropagation();
+        let num1 = parseInt(document.getElementById("val1").value);
+        let num2 = parseInt(document.getElementById("val2").value);
+        let operation = document.getElementById("choose").value;
+        let choose = null;
+        switch(operation)
+        {
+          case "+":
+            let add = (function (a, b) {
+              return a + b;
+            })(num1, num2);
+            var txt=document.getElementById("result").value;
+            txt=txt+add;
+            document.getElementById("result").value = txt;
+              
+            break;
+          case "-":
+            let sub = (function (a, b) {
+              return a - b;
+            })(num1, num2);
+            var txt=document.getElementById("result").value;
+            txt=txt+sub;
+            document.getElementById("result").value = txt;
+            break;
+          case "*":
+            let mul = (function (a, b) {
+              return a * b;
+            })(num1, num2);
+            var txt=document.getElementById("result").value;
+            txt=txt+mul;
+            document.getElementById("result").value = txt;
+            break;
+          case "/":
+            let div = (function (a, b) {
+              return a / b;
+            })(num1, num2);
+            var txt=document.getElementById("result").value;
+            txt=txt+div;
+            document.getElementById("result").value = txt;
+            break;
+          default:
+            alert("Invalid choice");
+            break;   
+            }
+      }
+</script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  
+</body>
+</html>

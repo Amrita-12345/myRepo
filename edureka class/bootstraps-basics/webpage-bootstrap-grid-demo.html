@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <style>
+body
+{
+background-color: gray;
+}
+
+      
+    .row {
+      margin: 5px;
+    }
+    .row>col {
+      padding: 5px;
+    }
+    .col>ul
+    {padding: 15px;}
+.col>ul>li
+{
+    display: inline;
+    list-style: none;
+    font-size: 20px;
+    padding-right: 80px;
+            padding-top: 15px;
+}
+.search 
+        {
+            display: flex;
+            flex-direction: row;
+            padding-top: 15px;
+        }
+
+        .search>button
+         {
+           
+            background: black;
+            color: white;
+           
+            
+        }
+  </style>
+</head>
+<body>
+    <h1 class="text-center text-light">Header</h1> 
+    
+      <div class="row">
+        <div class="col" style="background-color:violet ;">
+            <ul>
+                <li>HOME</li>
+                <li>OUR TEAM</li>
+                <li>PROJECTS</li>
+                <li>CONTACT</li>
+                <li class="search">
+                    <input type="text" name="search" id="search" placeholder="Search query">
+                    <button type="button" id="button" >Go!</button>
+              
+            </li>
+
+            </ul>
+            
+        </div>
+      </div>
+     <div class="row ">
+<div class="col-8" style="background-color:white ;">
+    <main>
+        <!-- Here, we include all the articles, sections and divs -->
+        <article>
+          <header name="artcileHeading" class="mainarticle">
+            <h1 class="text-center">Article Heading</h1>
+          </header>
+  
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            eius doloremque ipsam sunt, excepturi, maxime repudiandae laborum
+            dolorem repellat odit vitae laboriosam obcaecati sequi error! Aliquid
+            illum ab porro iusto.
+          </p>
+  
+          <section name="subsection1">
+            <h3>Subsection</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+              consequatur accusamus molestiae nostrum harum repudiandae quo modi,
+              aspernatur, vero error quos placeat dolorum velit! Ipsam nisi qui
+              distinctio quasi doloribus.
+            </p>
+  
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              adipisci sed? Nulla nemo dolorem id reprehenderit nostrum pariatur
+              ipsam error dolorum minima cupiditate omnis libero sint, quia velit.
+              Dignissimos, fugiat?
+            </p>
+          </section>
+  
+          <section name="subsection2">
+            <h3>Another subsection</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              suscipit soluta amet vero ratione maxime harum, doloribus
+              consequatur, unde facere non eveniet? Delectus dolorem nobis dolore!
+              Accusantium quasi illum dolores!
+            </p>
+  
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Architecto, accusantium ducimus doloremque, ab deleniti aperiam quas
+              dignissimos quae ratione dolorem eum molestiae iusto sequi,
+              asperiores ullam ipsa voluptatibus earum officia?
+            </p>
+          </section>
+        </article>
+      </main>
+</div>
+<div class="col-4 " style="background-color: violet; ">
+    <aside name="rightSidebar">
+        <h1 class="text-center">Related</h1>
+        <ul>
+          <li>
+            <a href="#">Oh I do like to be beside the seaside</a>
+          </li>
+          <li>
+            <a href="#">Oh I do like to beside the sea</a>
+          </li>
+          <li>
+            <a href="#">Although in the North of England</a>
+          </li>
+          <li>
+            <a href="#">It never stops raining</a>
+          </li>
+          <li>
+            <a href="#">Oh Well...</a>
+          </li>
+        </ul>
+      </aside>
+</div>
+     </div>
+     <div class="row">
+         <div class="col" style="background-color: white; height: 60px;">
+            &copy;Copyright 2050 by Amrita. All rights reserved.
+     </div> 
+    </div>
+
+
+
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

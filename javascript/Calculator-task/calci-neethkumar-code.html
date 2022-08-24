@@ -1,0 +1,148 @@
+<!-- <!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      #mainContent {
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <main id="mainContent"></main>
+    <h3 id="result"></h3>
+    <form action="#" onSubmit="event.preventDefault(); calculate();">
+      <input type="number" id="num1" placeholder="1st number" />
+      <input type="number" id="num2" placeholder="2nd number" />
+      <input type="number" id="choice" placeholder="Enter Choice" />
+      <input type="submit" value="Calculate" />
+    </form>
+
+    <script>
+      document.getElementById("mainContent").innerText =
+        "Welcome to the best calculator out there!";
+      document.write("<p> Choose the operation[1-6] to be performed:</p>");
+      document.write("<p> 1. Addition</p>");
+      document.write("<p> 2. Subtraction</p>");
+      document.write("<p> 3. Multiplication</p>");
+      document.write("<p> 4. Division</p>");
+      document.write("<p> 5. Modulus</p>");
+      document.write("<p> 6. Quit</p>");
+      document.write("<p> Enter choice to continue...</p>");
+
+      function calculate() {
+        event.preventDefault();
+        event.stopPropagation();
+        let num1 = parseInt(document.getElementById("num1").value);
+        let num2 = parseInt(document.getElementById("num2").value);
+        let operation = parseInt(document.getElementById("choice").value);
+        let choice = null;
+        switch (operation) {
+          case 1:
+            result = num1 + num2;
+            break;
+          case 2:
+            result = num1 - num2;
+            break;
+          case 3:
+            result = num1 * num2;
+            break;
+          case 4:
+            result = num1 / num2;
+            break;
+          case 5:
+            result = num1 % num2;
+            break;
+          case 6:
+            alert("Good Bye!");
+            break;
+          default:
+            alert("Invalid choice!");
+            break;
+        }
+        if (choice < 6 || choice > 0) {
+          document.getElementById("result").innerText = "Result = " + result;
+        }
+        document.getElementById("num1").value = "";
+        document.getElementById("num2").value = "";
+        document.getElementById("choice").value = "";
+      }
+    </script>
+  </body>
+</html>-->
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu-driven Calculator</title>
+</head>
+
+<body>
+    <h1 id="myHeading">Welcome to the best calculator out there!</h1>
+    <form action="#" id="inp-form" onSubmit="event.preventDefault(); calculate();">
+        <p id="Menu"></p>
+        <input id="num1" placeholder="Enter the 1st number:" type="number">
+        <input id="num2" placeholder="Enter the 2nd number:" type="number">
+
+        <p id="Menu-options"></p>
+        <p id="choice-msg"></p>
+
+        <input id="opt" placeholder="Enter your choice" type="number">
+        <input type="submit" value="Calculate" />
+        
+        <h2 id="result"></h2>
+    </form>
+    <script>
+        document.getElementById("Menu").innerText = "Enter two numbers for the calculation...";
+        document.getElementById("Menu-options").innerText = "Choose the operation[1-6] to be performed:\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Modulus\n6. Quit"
+        document.getElementById("choice-msg").innerText = "Enter choice to continue...";
+        function calculate() {
+            event.preventDefault();
+            event.stopPropagation();
+
+            let operation = parseInt(document.getElementById("opt").value);
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let result = null;
+
+            switch (operation) {
+                case 1:
+                    result = num1 + num2;
+                    break;
+                case 2:
+                    result = num1 - num2;
+                    break;
+                case 3:
+                    result = num1 * num2;
+                    break;
+                case 4:
+                    result = num1 / num2;
+                    break;
+                case 5:
+                    result = num1 % num2;
+                    break;
+                case 6:
+                    break;
+                default:
+                    alert("Invalid choice!");
+                    break;
+            }
+            if (result)
+                document.getElementById("result").innerText = "Result is: " + result;
+            else {
+                document.getElementById("result").innerText = "GoodBye!"
+            }
+            document.getElementById("inp-form").reset();
+        }
+    </script>
+</body>
+</html> -->

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Roadies Exam</title>
+   <link rel="stylesheet" href="../css/form1.css"> 
+    <title>Roadies Exam</title>
+           
+</head>
+</head>
+<body>
+    <header>
+        <!-- header part -->
+        <h1>Examinee Details</h1>
+    </header>
+    <main>
+        <section>
+            <form action="http://localhost">
+            <label>First name</label>&nbsp;&nbsp;
+            <input type="text" name="first-name" placeholder="Enter your first name">
+            <br><br>
+            <label>Last name</label>&nbsp;&nbsp;
+            <input type="text" name="last-name" placeholder="Enter your last name">
+            <br><br>
+            <label>Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="email" placeholder="Enter your email address">
+            <br><br>
+            <label>Password</label>&nbsp;&nbsp;
+            <input type="password" name="password" placeholder="Enter your password">
+            <br><br>
+            <label>DOB</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" name="dob" >
+            <br><br>
+            <label>Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" id="gender" value="male">Male
+            <input type="radio" name="gender" id="gender" value="female">Female
+            <br><br>
+            <label>State</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="state" id="state" >
+              <option style="display: none;"></option>
+            <option value="Andhrapradesh">Andhrapradesh</option>
+            <option value="Karnatka">Karnatka</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Madhyapradesh">Madhyapradesh</option>
+            <option value="Tamilnadu">Tamilnadu</option>
+            </select>
+            <br><br>
+            <label>Country</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="country" id="country">
+                <option style="display: none;"></option>
+            <option value="cont">India</option>
+            <option value="cont">United states</option>
+            <option value="cont">Japan</option>
+            <option value="cont">Jarmany</option>
+            <option value="cont">Italy</option>
+            </select>
+            <br><br>
+            <label>Pincode</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" name="pin" maxlength="6" pattern="[0-9]{6}">
+            <br><br>
+            <label>Exam date</label>&nbsp;&nbsp;
+            <input type="text" name="date" readonly value="03-05-2022">
+            <br><br>
+            <label>Exam slot</label>&nbsp;&nbsp;&nbsp;
+            <input type="time" name="time" >
+            <br><br>
+            <input type="checkbox" name="term" id="term" >  
+            I have read the terms & coditions<br><br>
+            <input type="submit" value="Submit" name="submit" id="submit">
+            <input type="reset" value="Reset" name="reset">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>"All the drama in this show is scripted"</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{background-color: gray;} 
+         h1{ 
+             color:white;
+            text-align: center; 
+        } 
+        .grid-container
+        {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        grid-template-areas:
+          "header header header header header header"
+          "main main main main rsidebar rsidebar"
+          "footer footer footer footer footer footer";
+        gap: 10px;
+        background-color: gray;
+        padding: 10px;
+        }
+       .grid-container > div
+         {
+        /* background-color: yellow; */
+      
+        padding: 20px 0;
+         font-size: 20px; 
+      }
+      .item1 {
+        grid-area: header;
+        background-color: rgb(247, 114, 154);
+        height: 70px;
+        text-align: center;
+        
+      }
+
+      .item2 {
+        grid-area: main;
+        background-color: white;
+        font-size: 16px;
+      }
+
+      .item3 {
+        grid-area: rsidebar;
+        background-color: rgb(247, 114, 154);
+      }
+
+      .item4 {
+        grid-area: footer;
+        background-color: white;
+      }
+     
+      .item1>ul>li {
+            padding-right: 80px;
+            padding-top: 10px;
+            display: inline;
+            list-style: none;
+            font-size: 20px;
+        }
+        /*.item1>ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+
+        }
+
+        .item1>ul>li {
+            padding-right: 100px;
+            padding-top: 10px;
+        }*/
+        .main h2{text-align: center;}
+        .search {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .search>button {
+            background: black;
+            color: white;
+        }
+
+        </style>
+</head>
+<body>
+   <h1>Header</h1> 
+   <div class="grid-container">
+       <div class="item1">
+          <ul>
+              <li>HOME</li>
+              <li>OUR TEAM</li>
+              <li>PROJECTS</li>
+              <li>CONTACT</li>
+              <li class="search">
+                  <input type="text" name="search" id="search" placeholder="Search query">
+                
+            <button type="button" id="button">Go!</button></li>
+          </ul>
+        </div>
+       <div class="item2">
+                </div>
+       <div class="item3">
+           
+       leftsidebar
+       </div>
+       <div class="item4">footer</div>
+       
+       </div>
+</body>
+</html>

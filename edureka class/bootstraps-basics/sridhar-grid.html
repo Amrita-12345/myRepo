@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Grid</title>
+    <style>
+      html {
+        background-color: grey;
+      }
+
+      .headerheading {
+        color: white;
+        font-style: italic;
+        font-size: 45px;
+        text-align: center;
+        margin: 0%;
+        padding-top: 1%;
+      }
+
+      .headermenu {
+        grid-area: headermenu;
+        background-color: rgb(35, 241, 149);
+        padding-top: 30px;
+        padding-left: 90px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 80px;
+      }
+
+      .articleheading {
+        font-style: italic;
+        font-size: 45px;   
+        text-align: center;
+        color: black;
+        margin: 10px;
+      }
+
+      .subsection {
+        font-style: italic;
+        font-size: 30px;
+        color: black;
+        margin: 0px;
+      }
+
+      .main {
+        grid-area: main;
+        background-color: white;
+        padding-left: 10px;
+      }
+
+      .rsidebar {
+        grid-area: rsidebar;
+        background-color: rgb(35, 241, 149);
+        padding-right: 20px;
+        font-size: large;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "headermenu headermenu headermenu headermenu headermenu headermenu"
+          "main main main main main rsidebar"
+          "footer footer footer footer footer footer";
+        gap: 10px;
+        padding: 10px;
+        margin: 10px 80px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1 class="headerheading">Header</h1>
+    <div class="grid-container">
+      <div class="headermenu">
+        <nav>
+          <div class="flex">
+            <a href="">HOME</a>
+            <a href="">OUR TEAM</a>
+            <a href="">PROJECTS</a>
+            <a href="">CONTACT</a>
+          </div>
+        </nav>
+      </div>
+      <div class="main">
+        <header class="article">
+          <h1 class="articleheading">Article heading</h1>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <section name="subsection1">
+          <h3 class="subsection">subsection</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur.
+          </p>
+          <p>
+            laboris nisi ut aliquip ex ea commodo consequat.Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+        </section>
+        <section name="subsection2">
+          <h3 class="subsection">Another subsection</h3>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </section>
+      </div>
+      <div class="rsidebar">
+        <aside name="rightSidebar">
+            <h1 class="articleheading">Related</h1>
+            <ul>
+              <li><a href="#">Oh I do like to be beside the seaside</li></a>
+              <li><a href="#">Oh I do like to be beside the sea</li></a>
+              <li><a href="#">Although in the North of England</li></a>
+              <li><a href="#">It never stops raining</li></a>
+              <li><a href="#">Oh well</li></a>
+            </ul>
+          </aside>
+      </div>
+      <div class="footer">
+        <footer>
+            &copy; Copyright 2050 by 'Sridhar Kesari'. All rights reserved
+          </footer>
+      </div>
+    </div>
+  </body>
+</html>
+

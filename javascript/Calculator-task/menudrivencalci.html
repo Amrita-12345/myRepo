@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML & JS Calculator</title>
+</head>
+
+<body>
+  <h1>Welcome to the best calculator out there!</h1>
+
+ 
+  <form action="#" id="reset1" onSubmit="event.preventDefault(); calculate();">
+    <h2>Enter two numbers:</h2>
+    <div>
+      <input type="number" id="num1" placeholder="1st number" />
+      <input type="number" id="num2" placeholder="2nd number" />
+    </div>
+    
+    <div id="operationMenu"></div>
+    <div id="operationMenu1"></div>
+    <h2></h2>
+          
+    <div> 
+      <input type="number" id="option" placeholder="Choose the operation " 
+      />
+    </div>
+      <h2></h2>
+    <div> <input type="submit" value="Calculate" />
+      <input type="reset" id="reset2" value="Clear" />  
+    </div>
+      <h2 id="result1"></h2>
+    </form>
+
+  
+  <script>
+  document.getElementById("operationMenu").innerHTML = "<h2>Choose the operation to be performed:[1-5]:</h2>";
+        document.getElementById("operationMenu1").innerHTML =
+          "1. Addition<br/>2. Substraction <br/>3. Multiplicaton<br/>4. Division<br/>5. Quit</br>";
+
+          function calculate() {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        let num1 = parseInt(document.getElementById("num1").value);
+        let num2 = parseInt(document.getElementById("num2").value);
+
+    let continueAgain = false;
+    let operation = parseInt(document.getElementById("option").value);
+        let result = null;
+        switch (operation) {
+          case 1:
+            result = num1+ num2;
+            break;
+          case 2:
+            result = num1 - num2;
+            break;
+          case 3:
+            result = num1 * num2;
+            break;
+          case 4:
+            result = num1 / num2;
+            break;
+          case 5:
+           break;
+           default:
+            alert("Invalid choice!");
+            break;
+        }
+        if(operation<5)
+        {
+         document.getElementById("result1").innerHTML="Result is" + result;
+        }
+        else
+        {
+          alert("Good Bye");
+          
+          document.getElementById("reset1").reset();
+        }
+        
+      } 
+     
+  </script>
+</body>
+</html>

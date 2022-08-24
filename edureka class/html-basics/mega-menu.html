@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+	</script>
+	<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+	</script>
+	<style>
+		html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* navigation bar */
+.navbar-light .navbar-nav .active {
+  border-bottom: 2px solid #37587b;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #37587b;
+}
+/* end of navigation bar */
+
+/*mega menu*/
+.dropdown-hover {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-hover-content {
+  display: none;
+  position: absolute;
+  margin-top: 2px;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  padding: 27px 14px 0;
+  z-index: 4;
+}
+
+.dropdown-hover-content .row {
+  width: 100%;
+}
+
+.dropdown-hover-content a.dropdown-item {
+  font-size: 14px;
+  white-space: normal;
+}
+
+.dropdown-hover:hover .dropdown-hover-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#link-1.dropdown-hover:hover {
+  border-bottom: 2px solid #37587b;
+}
+
+#link-2.dropdown-hover:hover {
+  border-bottom: 2px solid #37587b;
+}
+/*end of mega menu*/
+
+@media (max-width: 575.98px) {
+  .megamenu {
+    padding: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .megamenu {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .megamenu {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) {
+}
+</style>
+</head>
+
+<body>
+	<!-- navigation menu -->
+<nav class="navbar navbar-expand-xl navbar-light">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+    <div id="navbarNav" class="collapse navbar-collapse">
+      <!-- display on xl only -->
+      <div class="navbar-nav d-none d-xl-flex">
+        <div class="nav-item mx-2 active">
+          <a class="nav-link" href="#">Link 1</a>
+        </div>
+        <div class="nav-item mx-2">
+          <a class="nav-link" href="#">Link 2</a>
+        </div>
+        <div id="link-1" class="nav-item dropdown-hover mx-2">
+          <a class="nav-link dropdown-hover-button" href="#">Link 3 <i class="fas fa-caret-down"></i> <span class="sr-only">(current)</span></a>
+          <div class="dropdown-hover-content">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="mb-3">
+                  <h6><a class="colour-2" href="#">Heading 1</a></h6>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="mb-3">
+                  <h6><a class="colour-2" href="#">Heading 2</a></h6>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                </div>
+                <div class="mb-3">
+                  <h6><a class="colour-2" href="#">Heading 3</a></h6>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="mb-3">
+                  <h6><a class="colour-2" href="#">Heading 4</a></h6>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                </div>
+                <div class="mb-3">
+                  <h6><a class="colour-2" href="#">Heading 5</a></h6>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="mb-3">
+                  <h6><a class="colour-2" href="#">Heading 6</a></h6>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                </div>
+                <div class="mb-3">
+                  <h6><a class="colour-2" href="#">Heading 7</a></h6>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="link-2" class="nav-item dropdown-hover mx-2">
+          <a class="nav-link dropdown-hover-button" href="#">Link 4 <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-hover-content">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="mb-2">
+                  <h6><a class="colour-2" href="#">Heading 1</a></h6>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="mb-2">
+                  <h6><a class="colour-2" href="#">Heading 2</a></h6>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="mb-2">
+                  <h6><a class="colour-2" href="#">Heading 3</a></h6>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="mb-2">
+                  <h6><a class="colour-2" href="#">Heading 4</a></h6>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                  <a class="dropdown-item p-0" href="#">Sub Page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item mx-2">
+          <a class="nav-link" href="#">Link 5</a>
+        </div>
+      </div>
+      <div class="navbar-nav ml-auto d-none d-xl-flex">
+        <div class="nav-item mx-1">
+          <a class="nav-link" href="#">Link 6</a>
+        </div>
+        <div class="nav-item mx-1">
+          <a class="nav-link" href="#">Link 7</a>
+        </div>
+        <div class="nav-item mx-1">
+          <a class="nav-link" href="#">Link 8</a>
+        </div>
+        <div class="nav-item mx-1">
+          <a class="nav-link" href="#">Link 9</a>
+        </div>
+      </div>
+      <!-- display on xs, sm, md and lg -->
+      <div class="navbar-nav ml-auto d-block d-xl-none">
+        <div class="nav-item mx-2 active">
+          <a class="nav-link" href="#">Link 1</a>
+        </div>
+        <div class="nav-item mx-2">
+          <a class="nav-link" href="#">Link 2</a>
+        </div>
+        <div class="nav-item mx-2">
+          <a class="nav-link" href="#">Link 3</a>
+        </div>
+        <div class="nav-item mx-2">
+          <a class="nav-link" href="#">Link 4</a>
+        </div>
+        <div class="nav-item mx-2">
+          <a class="nav-link" href="#">Link 5</a>
+        </div>
+      </div>
+      <div class="navbar-nav ml-auto d-block d-xl-none">
+        <div class="nav-item mx-2">
+          <a class="nav-link" href="#">Link 6</a>
+        </div>
+        <div class="nav-item mx-2">
+          <a class="nav-link" href="#">Link 7</a>
+        </div>
+        <div class="nav-item mx-2">
+          <a class="nav-link" href="#">Link 8</a>
+        </div>
+        <div class="nav-item mx-2">
+          <a class="nav-link" href="#">Link 9</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>

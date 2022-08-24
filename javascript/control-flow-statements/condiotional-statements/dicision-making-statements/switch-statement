@@ -1,0 +1,100 @@
+// day of a week
+let day = parseInt(prompt("Enter the number of day a week"));
+
+switch (day) {
+    case 1:
+        alert("Monday");
+        break;
+    case 2:
+        alert("Tuesday");
+        break;
+    case 3:
+        alert("Wednesday");
+        break;
+    case 4:
+        alert("Thursday");
+        break;
+    case 5:
+        alert("Friday");
+        break;
+    case 6:
+        alert("Saturday");
+        break;
+    case 7:
+        alert("Sunday");
+        break;
+    default:
+        alert("please enter valid number");
+
+}
+// percentage
+let Physics = parseInt(prompt("Enter the Physics Marks"))
+let Chemistry = parseInt(prompt("Enter the Chemistry Marks"))
+let Biology = parseInt(prompt("Enter the Biology Marks"))
+let Mathematics = parseInt(prompt("Enter the Mathematics Marks"))
+let Computer = parseInt(prompt("Enter the Computer Marks"))
+let percentage = (Physics+Chemistry+Biology+Mathematics+Computer)/5;
+
+switch(true){
+    case (percentage>=90):
+        console.log("Grade A");
+        break;
+    case (percentage>=80):
+        console.log("Grade B");
+        break;
+    case (percentage>=70):
+        console.log("Grade C");
+        break;
+    case (percentage>=60):
+        console.log("Grade D");
+        break;
+    case (percentage>=40):
+        console.log("Grade E");
+        break;
+    case (percentage<=40):
+        console.log("Grade F");
+        break;
+    default:
+        console.log("Enter valid marks");
+    }
+        
+    // upper lower case
+    let character = prompt("Enter the character");
+ switch (true) {
+    case (character>='A' && character<='Z'):
+        console.log("Uppercase character");
+        break;
+    case (character>='a' && character<='z'):
+        console.log("Lowercase character");
+        break;
+    default:
+        alert("Invalid character");
+
+}
+
+// or other way uppercase
+let ch = prompt("Enter an alphabet character")
+ch = ch.charCodeAt(0)
+switch(true){
+    case (ch>=65 && ch<=90):
+        alert("Uppercase")
+        break;
+    case (ch>=97 && ch<=122):
+        alert("Lowercase")
+        break;
+    default:
+        alert("Please enter alphabet character only")
+}
+
+// even odd no.
+let num = parseInt(prompt("Enter a number"));
+switch (true) {
+    case (num % 2 == 0 ) :
+        console.log("The given number is even number");
+        break;
+    case (num % 2 != 0) :
+        console.log("The given number is odd number");
+        break;
+    default:
+        console.log("Please enter valid number");
+}

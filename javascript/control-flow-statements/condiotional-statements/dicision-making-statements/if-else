@@ -1,0 +1,99 @@
+// square or not
+let length = parseInt(prompt("Enter the length of a rectangle"));
+let breadth = parseInt(prompt("Enter the breadth of a rectangle"));
+if ( length == breadth)
+ {
+  console.log("It is a square");
+}
+ else
+ {
+  console.log("It is not a square");
+ }
+
+// greater no.
+let no1 = parseInt(prompt("Enter the first no."));
+let no2 =parseInt(prompt("Enter the second no."));
+if(no1 > no2)
+{
+    console.log(`${no1} is greater no.`);
+}
+else
+{
+    console.log(`${no2} is greater no.`);
+}
+
+// upper lower case
+let char = prompt("Enter a character");
+if ( char >= "A" && char <= "Z") {
+  console.log(char + " is an UpperCase character ");
+}
+else if (char >= "a" && char <= "z") {
+  console.log(char + " is a LowerCase character ");
+}
+else {
+  console.log("Entered value is not a character");
+}
+
+// discount
+let q= parseInt(prompt("Enter the quantity of product"));
+let cost=q*100;
+if(q>1000)
+{
+    totalcost=(cost-((cost)*10/100))
+    console.log(`Total is ${totalcost}`)
+}
+else
+{
+    console.log(`Total is ${cost}`);
+}
+
+// bonus
+let salary=parseInt(prompt("Enter your salary"));
+let service=parseInt(prompt("Year of service"));
+if(service>5)
+{
+    bonus=(salary*(5/100));
+    console.log(`Your net bonus is ${bonus}`)
+
+}
+else
+{
+console.log("You can not get bonus")
+}
+// absolute value
+let num=parseInt(prompt("Enter the number"));
+if(num<0)
+{
+    let absoluteval=num*(-1)
+    console.log(`Absolute value is ${absoluteval}`)
+}
+else
+{
+    console.log(`Absolute value is ${num}`)
+}
+//attendance per
+let clheld=parseInt(prompt("Enter the number of classes held"));
+let clattend=parseInt(prompt("Enter the number of classes attended"));
+let per=((clattend*100)/clheld)
+if(per>75)
+{
+    console.log("You are allowed to sit in the class")
+}
+else
+{
+    console.log("You are not allowed to sit in the class")  
+}
+
+// attendance and medical cause
+let clheld=parseInt(prompt("Enter the number of classes held"));
+let clattend=parseInt(prompt("Enter the number of classes attended"));
+let med = prompt("Did you have any medical cause?Enter 'Y'  or 'N' for no");
+let per=((clattend*100)/clheld)
+if(per>75 || med=="Y" )
+{
+    console.log("You are allowed to sit in the class")
+}
+else
+{
+    console.log("You are not allowed to sit in the class")  
+}

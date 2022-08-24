@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+</head>
+<style>
+    body{
+        background-color: grey;
+        box-sizing: border-box;
+    }
+    header h1{
+        color:white;
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 0%;
+        font-style: italic;
+        
+    }
+
+    nav{
+        background-color: hotpink;
+        width:85%;
+        margin: auto;
+        height:100px;
+        display:flex;
+        align-items: center;
+    }
+
+    .nav{
+        margin:30px;
+        font-size: 1.3rem;
+    }
+
+    .form{
+        margin-left:20px;
+    }
+
+    #search{
+        height:25px;
+        
+    }
+    #submit{
+        height:35px;
+        width:100px;
+        font-size: larger;
+        background-color: black;
+        color: white;
+    }
+
+    .main{
+        background-color: white;
+        width:65%;
+        margin-left:77px;
+        float:left;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+
+    .main h1{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 2rem;
+    }
+    .main p{
+        margin:20px;
+    }
+
+    .sub h2{
+        padding-left:20px;
+        font-size: 1.5rem;
+    }
+    .sub p{
+        font-size: medium;
+    }
+    .para{
+        padding-bottom: 20px;
+    }
+    aside{
+        background-color: hotpink;
+        width:18.3%;
+        margin-top:20px;
+        float:left;
+        margin-left:15px;
+        height:623px;
+    }
+    aside h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    li{
+        margin-bottom: 10px;
+    }
+
+    footer{
+       width:84%;
+       height:40px;
+       clear:both;
+       background-color:white;
+       margin-left:77px;
+       padding-top:25px;
+       padding-left:10px;
+    }
+
+    
+</style>
+
+<body>
+    <header>
+       <h1> Header <h1>
+    </header>
+
+    <nav>
+        <span class="nav">Home</span>
+        <span class="nav">OurTeam</span>
+        <span class="nav">Projects</span>
+        <span class="nav">Contacts</span>
+        <form class="form" action="#" method="get">
+            <input id="search" type="text" name="search" placeholder="Search queries">
+            <input id="submit" type="submit" name="submit" value="Go!">
+        </form>
+    </nav>
+
+    <article>
+        <section class="main">
+            <h1>Article Heading</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Est rem quas perspiciatis molestiae hic officia qui possimus, 
+                optio nemo perferendis. Rem incidunt at dolore laborum soluta atque, 
+                assumenda architecto officiis velit tempora consequuntur odio vero qui 
+                asperiores provident, distinctio voluptatum ex dolorem corporis pariatur
+                
+            </p>
+
+            <sub class="sub">
+                <h2>Subsection</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Odio eligendi culpa ullam eos commodi, tenetur ea id doloribus itaque, 
+                    nulla, explicabo provident vel! Maiores cupiditate, 
+                    illum id recusandae vitae fugiat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, 
+                    blanditiis quo necessitatibus quae itaque atque magnam, animi dolorum 
+                    pariatur inventore praesentium minus explicabo odit soluta. 
+                    Vero cumque distinctio vitae molestiae!</p>
+            </sub>
+            <sub class="sub">
+                <h2>Subsection</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Odio eligendi culpa ullam eos commodi, tenetur ea id doloribus itaque, 
+                    nulla, explicabo provident vel! Maiores cupiditate, 
+                    illum id recusandae vitae fugiat.</p>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, 
+                    blanditiis quo necessitatibus quae itaque atque magnam, animi dolorum 
+                    pariatur inventore praesentium minus explicabo odit soluta. 
+                    Vero cumque distinctio vitae molestiae!</p>
+            </sub>
+        </section>
+
+        <aside>
+            <h1>Related</h1>
+            <ul>
+                <li><a href="#">Oh I do like to be beside the seaside</a></li>
+                <li><a href="#">Oh I do like to be beside the sea</a></li>
+                <li><a href="#">Although in the North of England</a></li>
+                <li><a href="#">It never stops raining</a></li>
+                <li><a href="#">Oh Well..</a></li>
+            </ul> 
+        </aside>
+    </article>
+
+    <footer>
+        &copy;Copyright 2050 by nobody. All rights reserved
+    </footer>
+  
+</html>

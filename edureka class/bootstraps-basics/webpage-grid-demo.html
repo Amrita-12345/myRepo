@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body
+          {
+        background-color: grey;
+          }
+         h1{ 
+             
+            text-align: center; 
+            font-size: 35px;
+        } 
+        .grid-container
+        {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        grid-template-areas:
+          "header header header header header header"
+          "main main main main rsidebar rsidebar"
+          "footer footer footer footer footer footer";
+        gap: 10px;
+        background-color: gray;
+        padding: 10px;
+        }
+       .grid-container > div
+         {
+         padding: 20px 0;
+         font-size: 20px; 
+      }
+      .item1 {
+        grid-area: header;
+        background-color: rgb(247, 114, 154);
+        height: 70px;
+        text-align: center;
+        
+      }
+
+      .item2 {
+        grid-area: main;
+        background-color: white;
+        font-size: 16px;
+       
+      }
+
+      .item3 {
+        grid-area: rsidebar;
+        background-color: rgb(247, 114, 154);
+      }
+
+      .item4 {
+        grid-area: footer;
+        background-color: white;
+      }
+     
+      .item1>ul>li {
+            padding-right: 80px;
+            padding-top: 10px;
+            display: inline;
+            list-style: none;
+            font-size: 20px;
+        }
+        .item2 p,h3{padding-left: 10px;}
+       
+        .mainarticle
+         h2
+         {
+             text-align: center;
+        }
+        .search 
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .search>button
+         {
+            background: black;
+            color: white;
+        }
+
+        </style>
+</head>
+<body>
+   <h1>Header</h1> 
+   <div class="grid-container">
+       <div class="item1">
+          <ul>
+              <li>HOME</li>
+              <li>OUR TEAM</li>
+              <li>PROJECTS</li>
+              <li>CONTACT</li>
+              <li class="search">
+                  <input type="text" name="search" id="search" placeholder="Search query">
+                
+            <button type="button" id="button">Go!</button></li>
+          </ul>
+        </div>
+       <div class="item2">
+        <main>
+            <!-- Here, we include all the articles, sections and divs -->
+            <article>
+              <header name="artcileHeading" class="mainarticle">
+                <h1>Article Heading</h1>
+              </header>
+      
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                eius doloremque ipsam sunt, excepturi, maxime repudiandae laborum
+                dolorem repellat odit vitae laboriosam obcaecati sequi error! Aliquid
+                illum ab porro iusto.
+              </p>
+      
+              <section name="subsection1">
+                <h3>Subsection</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+                  consequatur accusamus molestiae nostrum harum repudiandae quo modi,
+                  aspernatur, vero error quos placeat dolorum velit! Ipsam nisi qui
+                  distinctio quasi doloribus.
+                </p>
+      
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+                  adipisci sed? Nulla nemo dolorem id reprehenderit nostrum pariatur
+                  ipsam error dolorum minima cupiditate omnis libero sint, quia velit.
+                  Dignissimos, fugiat?
+                </p>
+              </section>
+      
+              <section name="subsection2">
+                <h3>Another subsection</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                  suscipit soluta amet vero ratione maxime harum, doloribus
+                  consequatur, unde facere non eveniet? Delectus dolorem nobis dolore!
+                  Accusantium quasi illum dolores!
+                </p>
+      
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Architecto, accusantium ducimus doloremque, ab deleniti aperiam quas
+                  dignissimos quae ratione dolorem eum molestiae iusto sequi,
+                  asperiores ullam ipsa voluptatibus earum officia?
+                </p>
+              </section>
+            </article>
+          </main>
+        </div>
+       <div class="item3">
+           
+        <aside name="rightSidebar">
+            <h1>Related</h1>
+            <ul>
+              <li>
+                <a href="#">Oh I do like to be beside the seaside</a>
+              </li>
+              <li>
+                <a href="#">Oh I do like to beside the sea</a>
+              </li>
+              <li>
+                <a href="#">Although in the North of England</a>
+              </li>
+              <li>
+                <a href="#">It never stops raining</a>
+              </li>
+              <li>
+                <a href="#">Oh Well...</a>
+              </li>
+            </ul>
+          </aside>
+       </div>
+       <div class="item4">&copy;Copyright 2050 by Amrita. All rights reserved.</div>
+       </div>
+</body>
+</html>
